@@ -93,17 +93,6 @@ h3 {
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-/* Close Button */
-.popup-buttons button#closeButton {
-    background-color: #f44336;
-    color: white;
-}
-
-.popup-buttons button#closeButton:hover {
-    background-color: #d32f2f;
-    transform: translateY(-3px);
-}
-
 /* Open All Button */
 .popup-buttons button#openAllButton {
     background-color: #007bff;
@@ -113,30 +102,6 @@ h3 {
 .popup-buttons button#openAllButton:hover {
     background-color: #0056b3;
     transform: translateY(-3px);
-}
-
-/* Popup window body styling */
-.popup-window {
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-    width: 80%;
-    max-width: 600px;
-    height: 400px;
-    margin: auto;
-    position: relative;
-}
-
-/* Popup close button */
-.popup-buttons button#closeButton {
-    background-color: #f44336;
-    color: white;
-    border-radius: 6px;
-}
-
-.popup-buttons button#closeButton:hover {
-    background-color: #d32f2f;
 }
 
 /* Styling the page when the button appears */
