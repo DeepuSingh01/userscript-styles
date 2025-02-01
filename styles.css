@@ -1,110 +1,99 @@
-/* General body and page styles */
+/* styles.css */
+
+/* Basic styling for the body */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 20px;
     background-color: #f4f4f9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow: hidden;
 }
 
-/* Custom button styling */
-.khulja-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 15px 30px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    z-index: 9999;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease, transform 0.2s ease;
+/* Header styling */
+h2, h4 {
+    margin-top: 0;
+    color: #hhh;
 }
 
-.khulja-button:hover {
-    background-color: #0056b3;
-    transform: translateY(-3px);
+/* List styling */
+ul {
+    padding-left: 20px;
 }
 
-.khulja-button:focus {
-    outline: none;
+li {
+    margin-bottom: 10px;
 }
 
-/* Popup window styling */
-.popup-links ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.popup-links li {
-    margin: 10px 0;
-    font-size: 14px;
-}
-
-.popup-links a {
+/* Link styling */
+a {
     color: #007bff;
     text-decoration: none;
     word-wrap: break-word;
     display: block;
-    line-height: 1.6;
 }
 
-.popup-links a:hover {
+a:hover {
     text-decoration: underline;
 }
 
-/* Popup header */
-h3 {
-    color: #333;
-    margin-top: 20px;
-    font-size: 18px;
-    font-weight: 600;
-}
-
-/* Popup buttons container */
+/* Popup button container styling */
 .popup-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    position: absolute;
-    bottom: 20px;
+    position: fixed;
+    bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
     width: 100%;
+    justify-content: center;
 }
 
-/* Button styling */
+/* Close button styling */
+#closeButton {
+    background-color: #ff461e;
+}
+
+#closeButton:hover {
+    background-color: #cb2400;
+}
+
+/* Open SDS button styling */
+#openAllButton {
+    background-color: #28b463;
+}
+
+#openAllButton:hover {
+    background-color: #186a3b;
+}
+
+/* General button styling */
 .popup-buttons button {
-    padding: 12px 24px;
+    padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    border-radius: 6px;
     border: none;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-/* Open All Button */
-.popup-buttons button#openAllButton {
+    border-radius: 5px;
     background-color: #007bff;
-    color: white;
+    color: #fff;
 }
 
-.popup-buttons button#openAllButton:hover {
+.popup-buttons button:hover {
     background-color: #0056b3;
-    transform: translateY(-3px);
 }
 
-/* Styling the page when the button appears */
-body {
-    font-family: 'Arial', sans-serif;
+/* Fixed button styling */
+button {
+    position: fixed;
+    bottom: 20px;
+    right: 50%;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+button:hover {
+    background-color: #0056b3;
 }
